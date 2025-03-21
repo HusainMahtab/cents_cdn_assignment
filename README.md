@@ -39,7 +39,7 @@ npm install
 npm run dev
 ```
 
-4. Open [http://localhost:3000](https://cents-cdn-assignment.vercel.app/) with your browser to see the result.
+4. Open [https://cents-cdn-assignment.vercel.app/] with your browser to see the result.
 
 ## Usage
 
