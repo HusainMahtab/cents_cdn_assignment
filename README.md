@@ -25,8 +25,8 @@ A modern dashboard application built with Next.js, featuring authentication, API
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone <https://github.com/HusainMahtab/cents_cdn_assignment>
+cd <cents_cdn_assignment>
 ```
 
 2. Install dependencies:
@@ -39,7 +39,7 @@ npm install
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](https://cents-cdn-assignment.vercel.app/) with your browser to see the result.
 
 ## Usage
 
@@ -76,14 +76,4 @@ src/
 - `src/lib/`: Utilities and hooks
 - `src/types/`: TypeScript type definitions
 
-## Deployment
 
-The application can be easily deployed to Vercel:
-
-1. Push your code to a Git repository
-2. Import the project in Vercel
-3. Deploy
-
-## License
-
-MIT
