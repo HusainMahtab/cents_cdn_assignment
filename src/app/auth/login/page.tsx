@@ -31,15 +31,16 @@ export default function LoginPage() {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
+      setError(''); // Clear any previous errors
       await login(values);
       router.push('/dashboard');
-    } catch (error) {
-      setError('Invalid credentials');
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Invalid credentials');
     }
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900">
       <Card className="w-[400px]">
         <CardHeader>
           <CardTitle>Welcome Back</CardTitle>
@@ -75,7 +76,7 @@ export default function LoginPage() {
                 )}
               />
               {error && <p className="text-sm text-red-500">{error}</p>}
-              <Button type="submit" className="w-full cursor-pointer">
+              <Button type="submit" className="w-full">
                 Sign In
               </Button>
             </form>
