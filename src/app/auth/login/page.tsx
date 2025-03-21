@@ -76,7 +76,7 @@ export default function LoginPage() {
                 )}
               />
               {error && <p className="text-sm text-red-500">{error}</p>}
-              <Button type="submit" className="w-full">
+              <Button type="submit" className="w-full cursor-pointer">
                 Sign In
               </Button>
             </form>
